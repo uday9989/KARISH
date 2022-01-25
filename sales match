@@ -1,0 +1,29 @@
+import Foundation
+
+struct Solution {
+    
+    
+    func sockMerchant(_ arr: [Int]) -> Int {
+        var set = Set<Int>()
+        var ans = 0
+
+        for a in arr {
+            guard set.contains(a) else {
+                set.insert(a)
+                continue
+            }
+            ans += 1
+            set.remove(a)
+        }
+
+        return ans
+    }
+    
+}
+
+_ = Int(readLine()!)!
+let arr = readLine()!.split(separator: " ").compactMap { Int($0) }
+
+let solution = Solution()
+let ans = solution.sockMerchant(arr)
+print(ans)
