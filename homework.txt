@@ -1,0 +1,100 @@
+What is the difference between var and let?
+A "var" variable can be changed after it is initialized. However, a "let" variable cannot be changed after it is initialized. in  simple  words  we  can  say that 
+‘let’ keyword allows us to declare constants and ‘var’ keyword allows us to declare 
+
+
+
+
+
+What is an optional?
+An Optional is a variable that can either have a value or be 'nil'.in  other  words It increases the readability and safety of your code since a conscious decision must be made as to whether a variable has a value.
+
+
+
+
+What is optional chaining vs optional binding?
+Optional chaining is a process for querying and calling properties, methods, and subscripts on an optional that might currently be nil. 
+If the optional contains a value, the property, method, or subscript call succeeds; if the optional is nil, the property, method, or subscript call returns nil.
+
+
+
+
+What are the different ways to unwrap an optional? How do they work? Are they safe?
+the  different  types   of  unwrap  an optional 
+Using an if else block
+Using Forced unwrapping
+Using Optional binding
+Using Optional chaining
+Using a nil coalescing operator
+Some developers force unwrap optionals regularly, and some never do it, but it won’t surprise you to learn that both of those are pretty extreme and will cause you problems.
+
+
+
+
+
+What is a closure?
+chunks of code that can be passed around and reused within the same code.They can store and capture references to variables and constants which is also referred to as closing over constants and variables
+
+
+What is the difference between a class and a struct?
+
+A class in Swift is a reference type which can contain:
+
+properties
+methods
+subscripts
+initializers
+protocol conformances
+extensions
+
+A struct in Swift is a value type which, just like classes, can contain:
+
+properties
+methods
+subscripts
+initializers
+protocol conformances
+extensions
+
+class is a reference type, structure is a value type. It means that structs are copied when passed somewhere, whereas classes are passed by reference
+
+
+What is the syntax '??' do?
+it  is  a  nil-coalescing operator 
+This operator is generally used to provide a default value when an expression or variable produces an optional result. for ex:
+
+let i: Int? = 5
+let j: Int? = nil
+
+let value1 = i ?? 9 //value1 will be 5 non-optional
+let value2 = j ?? 9 //value2 will be 9 non-optional
+
+
+
+
+What is a tuple?
+A Tuple is a constant or variable that can accommodate a group of values that can be of different data types and compounded for a single value. In easy words, a tuple is a structure that can hold multiple values of distinct data types. Tuples are generally used as return values to retrieve various data from the output of any process. 
+
+
+
+What is Any vs AnyObject?
+AnyObject refers to any instance of a class, and is equivalent to id in Objective-C. It’s useful when you specifically want to work with a reference type, because it won’t allow any of Swift’s structs or enums to be used. AnyObject is also used when you want to restrict a protocol so that it can be used only with classes.
+
+Any refers to any instance of a class, struct, or enum – literally anything at all. You’ll see this in Swift wherever types are unknown or are mixed in ways that can be meaningfully categorized:
+
+
+
+What is a protocol?
+A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can then be adopted by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to conform to that protocol.
+
+
+
+
+What is Delegation
+A delegate is an object that acts on behalf of, or in coordination with, another object when that object encounters an event in a program. The delegating object is often a responder object–that is, an object inheriting from NSResponder in AppKit or UIResponder in UIKit–that is responding to a user event
+
+
+
+Explain UIKit - What is?
+
+UIKit is the framework that you'll user most often when developing iOS applications. It defines the core components of an iOS application, from labels and buttons to table views and navigation controllers.
